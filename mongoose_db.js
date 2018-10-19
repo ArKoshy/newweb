@@ -1,8 +1,8 @@
 
 //mongoose setup
-const mongoose = require('mongoose');
+var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/Users'); //creates a db called users when we push some data to Mongo
+mongoose.connect('mongodb://localhost:27017/Users',{ useNewUrlParser: true }); //creates a db called users when we push some data to Mongo
 
 
 module.exports={

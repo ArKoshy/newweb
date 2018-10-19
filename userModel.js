@@ -5,10 +5,14 @@ var mongoose = require('mongoose');
 
 var Users = mongoose.model('Users',{
     name:{type:String,
-    required:true,                //add validations
+    //required:true,                //add validations
     minlength:2,
     trim:true},        
-    age:{type:Number}
+    age:{type:Number},
+    rollno:{type:Number},
+    admno:{type:Number},
+    college:{type:String}
+        
 });
 // Model Users is diff from the database Users
 
